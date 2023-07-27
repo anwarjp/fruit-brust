@@ -215,7 +215,7 @@
     <main class="container mx-auto md:mt-56 px-5 md:px-0">
       <!-- Deal of the day -->
       <div
-        class="deal-top-container flex flex-col md:flex-row justify-between gap-5 md:gap-96 items-center"
+        class="deal-top-container flex flex-col lg:flex-row text-center lg:text-left gap-5 lg:gap-96"
       >
         <div class="space-y-6">
           <p class="font-extrabold text-5xl">Deal of the day</p>
@@ -227,9 +227,7 @@
         </div>
 
         <div class="">
-          <div
-            class="grid grid-flow-col gap-5 text-center auto-cols-max items-center"
-          >
+          <div class="flex gap-5 text-center auto-cols-max items-center">
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
                 <span class="font-extrabold text-5xl" style="--value: 15">
@@ -261,7 +259,10 @@
             <i class="-mt-[25px] fa-solid fa-ellipsis-vertical"></i>
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
-                <span style="--value: 37"></span>
+                <span
+                  class="font-extrabold text-5xl"
+                  style="--value: 37"
+                ></span>
               </span>
               <span class="text-base text-gray-400">sec</span>
             </div>
@@ -271,7 +272,7 @@
 
       <!-- card container-->
       <div class="my-12">
-        <div class="flex justify-center flex-col md:flex-row gap-6">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 lg:gap-6">
           <!-- card one -->
           <div class="card border-gray-100 border p-10 bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
@@ -754,6 +755,127 @@
           Shop All
         </button>
       </div>
+
+      <!-- meet the team section -->
+      <section class="mt-5  lg:mt-32">
+        <div
+          class="hero min-h-[690px]"
+          style="background-image: url(./images/team.png)"
+        >
+          <div class="hero-overlay bg-opacity-60">
+          </div>
+          <div class="text-neutral-content">
+            <div class="">
+              <div class="text-center p-5">
+                <h1 class="mb-5 text-5xl text-white font-extrabold">
+                  Meet the team section
+                </h1>
+                <p class="mb-12">
+                  Contrary to popular belief, is not simply random text. It has
+                  roots in a piece of classical <br />
+                  Latin literature from 45 BC, making it over 2000 years old.
+                </p>
+              </div>
+
+              <!-- team card -->
+              <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:gap-24 lg:grid-cols-4 p-5">
+                <!-- member one -->
+                <div class="pl-[6.5rem] md:pl-5 lg:pl-0 space-y-2 text-center">
+                  <img src="./images/member1.png" width="" alt="" />
+                  <p class="font-bold text-2xl text-justify">Awlad Hossain</p>
+                  <p class="text-left pl-6">Fruits Expert</p>
+                  <div class="flex gap-5 items-center text-white">
+                    <a href="#"
+                      ><i
+                        class="bg-red-500 p-2 px-3 rounded-[100%] fa-brands fa-facebook-f"
+                      ></i
+                    ></a>
+                    <a href="#">
+                      <i
+                        class="bg-red-500 p-2 rounded-[100%] fa-brands fa-twitter"
+                      ></i
+                    ></a>
+                    <a href="#">
+                      <i
+                        class="bg-red-500 p-2 rounded-[100%] fa-brands fa-linkedin-in"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- member two -->
+                <div class="pl-[6.5rem] lg:pl-0 space-y-2">
+                  <img class="ml-4" src="./images/member2.png" width="140px" alt="" />
+                  <p class="font-bold text-2xl">Safia Chowdhury</p>
+                  <p class="pl-6">Fruits Expert</p>
+                  <div class="flex gap-5 items-center text-white">
+                    <a href="#"
+                      ><i
+                        class="bg-red-500 p-2 px-3 rounded-[100%] fa-brands fa-facebook-f"
+                      ></i
+                    ></a>
+                    <a href="#">
+                      <i
+                        class="bg-red-500 p-2 rounded-[100%] fa-brands fa-twitter"
+                      ></i
+                    ></a>
+                    <a href="#">
+                      <i
+                        class="bg-red-500 p-2 rounded-[100%] fa-brands fa-linkedin-in"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- member three -->
+                <div class="pl-[6.5rem] md:pl-5 lg:pl-0 space-y-2">
+                  <img src="./images/member3.png" width="140px" alt="" />
+                  <p class="font-bold text-2xl text-justify">Rokib Hossain</p>
+                  <p class="pl-6">Fruits Expert</p>
+                  <div class="flex gap-5 items-center text-white">
+                    <a href="#"
+                      ><i
+                        class="bg-red-500 p-2 px-3 rounded-[100%] fa-brands fa-facebook-f"
+                      ></i
+                    ></a>
+                    <a href="#">
+                      <i
+                        class="bg-red-500 p-2 rounded-[100%] fa-brands fa-twitter"
+                      ></i
+                    ></a>
+                    <a href="#">
+                      <i
+                        class="bg-red-500 p-2 rounded-[100%] fa-brands fa-linkedin-in"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- member four -->
+                <div class="pl-[6.5rem] lg:pl-0 space-y-2">
+                  <img src="./images/member4.png" width="140px" alt="" />
+                  <p class="pl-8 font-bold text-2xl">Chaity</p>
+                  <p class="pl-6">Fruits Expert</p>
+                  <div class="flex gap-5 items-center text-white">
+                    <a href="#"
+                      ><i
+                        class="bg-red-500 p-2 px-3 rounded-[100%] fa-brands fa-facebook-f"
+                      ></i
+                    ></a>
+                    <a href="#">
+                      <i
+                        class="bg-red-500 p-2 rounded-[100%] fa-brands fa-twitter"
+                      ></i
+                    ></a>
+                    <a href="#">
+                      <i
+                        class="bg-red-500 p-2 rounded-[100%] fa-brands fa-linkedin-in"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
