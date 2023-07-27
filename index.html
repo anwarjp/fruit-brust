@@ -93,13 +93,10 @@
 
       <!-- slider section -->
 
-      <div class="carousel h-[calc(100vh-154px)] w-full relative">
+      <div class="carousel h-[calc(100vh-154px)] w-full z-0 relative">
         <div id="slide1" class="carousel-item relative w-full">
           <!-- slide-content 1-->
-          <div
-            class="hero"
-            style="background-image: url(./images/banner1.png)"
-          >
+          <div class="hero" style="background-image: url(./images/banner1.png)">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md">
@@ -122,10 +119,7 @@
         </div>
         <div id="slide2" class="carousel-item relative w-full">
           <!-- slide-content 2-->
-          <div
-            class="hero"
-            style="background-image: url(./images/banner2.png)"
-          >
+          <div class="hero" style="background-image: url(./images/banner2.png)">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md">
@@ -147,10 +141,7 @@
         </div>
         <div id="slide3" class="carousel-item relative w-full">
           <!-- slide-content 3-->
-          <div
-            class="hero"
-            style="background-image: url(./images/banner3.png)"
-          >
+          <div class="hero" style="background-image: url(./images/banner3.png)">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md">
@@ -173,10 +164,7 @@
 
         <div id="slide4" class="carousel-item relative w-full">
           <!-- slide-content 4-->
-          <div
-            class="hero"
-            style="background-image: url(./images/banner4.png)"
-          >
+          <div class="hero" style="background-image: url(./images/banner4.png)">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md">
@@ -198,20 +186,22 @@
         </div>
       </div>
       <!-- fruits grid -->
-      <section class="shadow-lg shadow-blue-500/50 rounded-lg grid lg:grid-cols-5 p-10 bg-white mx-200px absolute justify-around gap-10 -bottom-20 left-48">
-        <div class="flex flex-col items-center gap-2 ">
+      <section
+        class="absolute z-200 shadow-lg shadow-blue-500/50 rounded-lg hidden md:flex p-4 bg-white mx-400px justify-around gap-10 md:w-10/12 md:-mt-8 md:ml-14 lg:-mt-10 lg:ml-20"
+      >
+        <div class="flex flex-col items-center">
           <img src="images/fruit1.png" alt="" srcset="" />
           <p class="text-slate-500">Litchi</p>
         </div>
-        <div class="flex flex-col items-center gap-2">
+        <div class="flex flex-col items-center">
           <img src="images/fruit2.png" alt="" srcset="" />
           <p class="text-slate-500">Orange</p>
         </div>
-        <div class="flex flex-col items-center gap-2">
+        <div class="flex flex-col items-center">
           <img src="images/fruit3.png" alt="" srcset="" />
           <p class="text-slate-500">Mango</p>
         </div>
-        <div class="flex flex-col items-center gap-2">
+        <div class="flex flex-col items-center">
           <img src="images/fruit4.png" alt="" srcset="" />
           <p class="text-slate-500">Strawberry</p>
         </div>
@@ -222,7 +212,116 @@
       </section>
     </header>
 
-    <main></main>
+    <main class="container mx-auto md:mt-56 px-5 md:px-0">
+      <!-- Deal of the day -->
+      <div
+        class="deal-top-container flex flex-col md:flex-row justify-between gap-5 md:gap-96 items-center"
+      >
+        <div class="space-y-6">
+          <p class="font-extrabold text-5xl">Deal of the day</p>
+          <p class="text-base text-gray-400">
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical Latin literature from 45 BC, making it over
+            2000 years old.
+          </p>
+        </div>
+
+        <div class="">
+          <div
+            class="grid grid-flow-col gap-5 text-center auto-cols-max items-center"
+          >
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span class="font-extrabold text-5xl" style="--value: 15">
+                </span>
+              </span>
+              <span class="text-base text-gray-400">days</span>
+            </div>
+            <i class="-mt-[25px] fa-solid fa-ellipsis-vertical"></i>
+
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span
+                  class="font-extrabold text-5xl"
+                  style="--value: 10"
+                ></span>
+              </span>
+              <span class="text-base text-gray-400">hours</span>
+            </div>
+            <i class="-mt-[25px] fa-solid fa-ellipsis-vertical"></i>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span
+                  class="font-extrabold text-5xl"
+                  style="--value: 24"
+                ></span>
+              </span>
+              <span class="text-base text-gray-400">min</span>
+            </div>
+            <i class="-mt-[25px] fa-solid fa-ellipsis-vertical"></i>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 37"></span>
+              </span>
+              <span class="text-base text-gray-400">sec</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card -->
+      <div class="my-12">
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img
+              src="./images/fruit6.png"
+              alt="Shoes"
+              class="rounded-xl"
+            />
+          </figure>
+
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            <hr class=" border-[#a1a0a0]	w-full	">
+            <p class="text-[#807f7f]">Apples</p>
+           
+            <div class="rating">
+              <input
+                type="radio"
+                name="rating-4"
+                class="mask mask-star-2 bg-red-500	"
+              />
+              <input
+                type="radio"
+                name="rating-4"
+                class="mask mask-star-2 bg-red-500"
+                checked
+              />
+              <input
+                type="radio"
+                name="rating-4"
+                class="mask mask-star-2 bg-red-500"
+              />
+              <input
+                type="radio"
+                name="rating-4"
+                class="mask mask-star-2 bg-red-500"
+              />
+              <input
+                type="radio"
+                name="rating-4"
+                class="mask mask-star-2 bg-red-500"
+              />
+            </div>
+            <div class="card-actions">
+              <a href="#" class="font-bold text-red-500">Details</a>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
